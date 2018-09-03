@@ -1,0 +1,154 @@
+@import './mixin.less';
+@import './weui.less';
+
+html,
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+  // letter-spacing: 1px;
+}
+//公共header部分
+.head-wrapper {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  background: @theme-color;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  z-index: 99;
+  .back {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 30px;
+    text-align: center;
+  }
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 64px;
+  bottom: 55px;
+  background-color: #ebebeb;
+}
+
+.subContent {
+  width: 100%;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  background-color: #ebebeb;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+// 公共pannel样式
+.descItem {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .describe {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #999;
+    .title {
+      color: #333;
+      font-weight: 700;
+    }
+    .left {
+      display: inline-block;
+      width: 60px;
+    }
+    .text {
+      color: #333;
+    }
+  }
+}
+
+/* .desc {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  color: #999;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .describe {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    span {
+      margin-right: 10px;
+    }
+    .text {
+      font-size: 12px;
+      color: #333;
+    }
+  }
+} */
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+// 滚动底部样式
+.cube-pullup-wrapper .before-trigger {
+  padding: 0;
+  min-height: 0em;
+}
+
+// 修改cube-ui的upload样式
+.cube-upload-file-def {
+  width: 225px;
+  height: 150px;
+}
+/* .cube-loading {
+  display: none;
+} */
+
+// input的placeholder样式
+input::-webkit-input-placeholder {
+  color: #999;
+}
+.login {
+  .weui-cell {
+    border-color: #80c7e9!important;
+  }
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+img {
+  vertical-align: middle;
+}

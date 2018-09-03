@@ -1,0 +1,109 @@
+/*修正weui样式*/
+@import 'mixin.less';
+
+.weui-media-box__bd {
+  text-align: left;
+}
+
+.weui-btn.weui-btn_primary {
+  background-color: @theme-color;
+}
+
+.weui-btn.weui-btn_primary:not(.weui-btn_disabled):active {
+  background-color: @theme-color;
+  opacity: 0.8;
+}
+
+.weui-cells__title {
+  padding-top: 0.77em;
+  padding-bottom: 0.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.weui-cells {
+  font-size: 14px !important;
+  margin-top: 10px !important;
+  .weui-cell {
+    padding: 10px 15px;
+  }
+}
+
+.register, .register2 {
+  .weui-cells:after {
+    border-bottom: none;
+  }
+
+  .weui-cell:before {
+    border-top: none;
+  }
+
+  .vux-cell-box:not(:first-child):before {
+    border-top: none;
+  }
+}
+
+.weui-tabbar {
+  position: fixed !important;
+  height: 55px;
+  .weui-tabbar__item {
+    padding-top: 8px;
+  }
+}
+
+.weui-tabbar__item .weui-tabbar__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.weui-search-bar__label {
+  line-height: 26px;
+}
+
+.weui-wepay-flow.weui-wepay-flow_vertical {
+  width: 14px;
+  padding: 0;
+  .weui-wepay-flow__state {
+    background-color: #fff;
+    border: 1px solid @theme-color;
+  }
+  .weui-wepay-flow__line {
+    width: 1px;
+    height: 116px;
+    background-color: @theme-color;
+  }
+}
+
+.weui-toast {
+  background-color: #616161;
+}
+.weui-toast_text .weui-toast__content {
+  padding: 14px 0;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.weui-toast.vux-toast-bottom {
+  bottom: 100px;
+}
+
+.weui-dialog {
+  color: #2e2e2e;
+  .weui-dialog__hd {
+    margin-bottom: 20px;
+  }
+  .weui-dialog__bd {
+    color: #2e2e2e;
+  }
+  .weui-dialog__btn_primary,
+  .weui-dialog__btn_default {
+    color: #2e2e2e;
+    font-size: 16px;
+  }
+}
+.community {
+  .weui-dialog {
+    .weui-dialog__bd:first-child {
+      padding: 30px 20px 15px;
+    }
+  }
+}
